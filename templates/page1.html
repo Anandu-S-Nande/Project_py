@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<br>
+<h1>Product Form </h1>
+
+
+<form method="POST" enctype="multipart/form-data"> <!--how the data collect here?-->
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+{% endblock %}
