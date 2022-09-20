@@ -6,9 +6,11 @@
 <h1>Product Form </h1>
 
 
-<form method="POST" enctype="multipart/form-data"> <!--how the data collect here?-->
+<form style="background-color: rgb(103, 119, 171);" method="POST" enctype="multipart/form-data"> 
+    <h1>Product Form</h1>
     {% csrf_token %}
     {{form.as_p}}
+    <!-- {{ form.as_table }} -->
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
